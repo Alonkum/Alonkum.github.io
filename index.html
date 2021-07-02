@@ -5,33 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaWwwWRNjK_AV_9AEPHLYbts-Ci-uvYi4"></script>
-<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script src="https://www.govmap.gov.il/govmap/api/govmap.api.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function ()
-        {
-            govmap.createMap('map',
-                {
-                    token: '5a4b8472-b95b-4687-8179-0ccb621c7990',
-                    layers: ["GASSTATIONS","PARCEL_HOKS", "KSHTANN_ASSETS", "bus_stops", "PARCEL_ALL"],
-                    showXY: true,
-                    identifyOnClick: true,
-                    isEmbeddedToggle: false,
-                    background: 3,
-                    layersMode: 1,
-                    zoomButtons:false
-               });
 
-        });
-        function showExample(){
-            var params = {
-                layerName: '2756',
-            };
-            govmap.getAddEntitiesSample(params).then(function(response){
-                console.log(response);
-            });
-        }
-   </script>
 <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript></head>
 <body>
   <app-root></app-root>
